@@ -25,6 +25,12 @@ public class TUI {
                 INSERT INTO dbsys08.buchung  (ferienwohnung_id, buchung_nummer, anreisedatum, abreisedatum, buchung_datum, rechnung_nummer, rechnung_datum, rechnung_betrag, bewertung_nummer, sterne, bewertung_datum, mail)
                 VALUES (3, buchID.NextVal, '10.05.2016', '24.05.2016', '01.05.2016', buchID.CurrVal, '28.05.2016', 1500, buchID.CurrVal, 5, '29.05.2016', 'zellner@gmail.com');
                 ");
+
+
+            } catch (Exception e){
+            System.out.println("fehler: " + e);
+            }
+
 */
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
@@ -60,9 +66,7 @@ public class TUI {
 */
 
 
-       // } catch (Exception e){
-       //     System.out.println("fehler: " + e);
-     //   }
+
 
 
     }
