@@ -46,7 +46,7 @@ public class TUI {
                 switch (splitStr[0]){
                     case "exit": System.exit(0);
                     case "-s":    ;
-                    case "-b":    ;
+                    case "-b":   conn.commit() ;
                 }
 
                 for (String str : splitStr)
