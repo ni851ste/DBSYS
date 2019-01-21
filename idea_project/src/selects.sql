@@ -5,7 +5,7 @@ WHERE (stadt.plz = ferienwohnung.plz)
 GROUP BY (stadt.stadtname);
 
 /* 2. */
-SELECT fw_name, AVG(sterne)
+SELECT fw_name,  AVG(sterne)
 FROM dbsys08.ferienwohnung fw,dbsys08.buchung b
 WHERE fw.landname = 'Spanien' AND b.ferienwohnung_ID = fw.ferienwohnung_ID
 GROUP BY fw_name
